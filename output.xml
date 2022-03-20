@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.8.10 on linux)" generated="20220320 23:54:15.970" rpa="false" schemaversion="2">
+<suite id="s1" name="Main" source="/home/nurul/Desktop/DRCT4Project/main.robot">
+<test id="s1-t1" name="Open Hikers">
+<kw name="Open Hikers" library="kword">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://tradehikers.xyz/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220320 23:54:16.081" level="INFO">Opening browser 'chrome' to base url 'https://tradehikers.xyz/'.</msg>
+<status status="PASS" starttime="20220320 23:54:16.081" endtime="20220320 23:54:19.253"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220320 23:54:19.254" endtime="20220320 23:54:19.437"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220320 23:54:19.438" endtime="20220320 23:54:19.439"/>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div[1]/div/div/a[1]/div</arg>
+<arg>Login</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20220320 23:54:19.439" endtime="20220320 23:54:23.583"/>
+</kw>
+<status status="PASS" starttime="20220320 23:54:16.081" endtime="20220320 23:54:23.584"/>
+</kw>
+<kw name="Scroll Page" library="kword">
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div[2]/section[2]/div[2]/iframe</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220320 23:54:23.609" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=99.0.4844.51)
+Stacktrace:
+#0 0x55962e0047d3 &lt;unknown&gt;
+#1 0x55962dd6051f &lt;unknown&gt;
+#2 0x55962dd4e954 &lt;unknown&gt;
+#3 0x55962dd4f369 &lt;unknown&gt;
+#4 0x55962dd51132 &lt;unknown&gt;
+#5 0x55962dd49486 &lt;unknown&gt;
+#6 0x55962dd61a82 &lt;unknown&gt;
+#7 0x55962ddc7118 &lt;unknown&gt;
+#8 0x55962ddb45a3 &lt;unknown&gt;
+#9 0x55962dd89ddc &lt;unknown&gt;
+#10 0x55962dd8ade5 &lt;unknown&gt;
+#11 0x55962e03549d &lt;unknown&gt;
+#12 0x55962e04e60c &lt;unknown&gt;
+#13 0x55962e037205 &lt;unknown&gt;
+#14 0x55962e04eee5 &lt;unknown&gt;
+#15 0x55962e02b070 &lt;unknown&gt;
+#16 0x55962e06a488 &lt;unknown&gt;
+#17 0x55962e06a60c &lt;unknown&gt;
+#18 0x55962e083c6d &lt;unknown&gt;
+#19 0x7fdab29da609 &lt;unknown&gt;
+</msg>
+<status status="FAIL" starttime="20220320 23:54:23.600" endtime="20220320 23:54:23.609"/>
+</kw>
+<msg timestamp="20220320 23:54:23.609" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=99.0.4844.51)
+Stacktrace:
+#0 0x55962e0047d3 &lt;unknown&gt;
+#1 0x55962dd6051f &lt;unknown&gt;
+#2 0x55962dd4e954 &lt;unknown&gt;
+#3 0x55962dd4f369 &lt;unknown&gt;
+#4 0x55962dd51132 &lt;unknown&gt;
+#5 0x55962dd49486 &lt;unknown&gt;
+#6 0x55962dd61a82 &lt;unknown&gt;
+#7 0x55962ddc7118 &lt;unknown&gt;
+#8 0x55962ddb45a3 &lt;unknown&gt;
+#9 0x55962dd89ddc &lt;unknown&gt;
+#10 0x55962dd8ade5 &lt;unknown&gt;
+#11 0x55962e03549d &lt;unknown&gt;
+#12 0x55962e04e60c &lt;unknown&gt;
+#13 0x55962e037205 &lt;unknown&gt;
+#14 0x55962e04eee5 &lt;unknown&gt;
+#15 0x55962e02b070 &lt;unknown&gt;
+#16 0x55962e06a488 &lt;unknown&gt;
+#17 0x55962e06a60c &lt;unknown&gt;
+#18 0x55962e083c6d &lt;unknown&gt;
+#19 0x7fdab29da609 &lt;unknown&gt;
+</msg>
+<msg timestamp="20220320 23:54:23.612" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=99.0.4844.51)
+Stacktrace:
+#0 0x55962e0047d3 &lt;unknown&gt;
+#1 0x55962dd6051f &lt;unknown&gt;
+#2 0x55962dd4e954 &lt;unknown&gt;
+#3 0x55962dd4f369 &lt;unknown&gt;
+#4 0x55962dd51132 &lt;unknown&gt;
+#5 0x55962dd49486 &lt;unknown&gt;
+#6 0x55962dd61a82 &lt;unknown&gt;
+#7 0x55962ddc7118 &lt;unknown&gt;
+#8 0x55962ddb45a3 &lt;unknown&gt;
+#9 0x55962dd89ddc &lt;unknown&gt;
+#10 0x55962dd8ade5 &lt;unknown&gt;
+#11 0x55962e03549d &lt;unknown&gt;
+#12 0x55962e04e60c &lt;unknown&gt;
+#13 0x55962e037205 &lt;unknown&gt;
+#14 0x55962e04eee5 &lt;unknown&gt;
+#15 0x55962e02b070 &lt;unknown&gt;
+#16 0x55962e06a488 &lt;unknown&gt;
+#17 0x55962e06a60c &lt;unknown&gt;
+#18 0x55962e083c6d &lt;unknown&gt;
+#19 0x7fdab29da609 &lt;unknown&gt;
+</msg>
+<status status="FAIL" starttime="20220320 23:54:23.585" endtime="20220320 23:54:23.612"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div[2]/section[3]/div[2]/div[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" starttime="20220320 23:54:23.612" endtime="20220320 23:54:23.612"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div[2]/section[3]/div[2]/div[3]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" starttime="20220320 23:54:23.612" endtime="20220320 23:54:23.612"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//*[@id="root"]/div[2]/footer</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" starttime="20220320 23:54:23.612" endtime="20220320 23:54:23.612"/>
+</kw>
+<status status="FAIL" starttime="20220320 23:54:23.584" endtime="20220320 23:54:23.613"/>
+</kw>
+<kw name="Signup" library="kword">
+<status status="NOT RUN" starttime="20220320 23:54:23.613" endtime="20220320 23:54:23.613"/>
+</kw>
+<kw name="Login" library="kword">
+<status status="NOT RUN" starttime="20220320 23:54:23.613" endtime="20220320 23:54:23.613"/>
+</kw>
+<kw name="Wallet Reload" library="kword">
+<status status="NOT RUN" starttime="20220320 23:54:23.613" endtime="20220320 23:54:23.613"/>
+</kw>
+<kw name="Charts" library="kword">
+<status status="NOT RUN" starttime="20220320 23:54:23.613" endtime="20220320 23:54:23.613"/>
+</kw>
+<kw name="Market Buy" library="kword">
+<status status="NOT RUN" starttime="20220320 23:54:23.613" endtime="20220320 23:54:23.613"/>
+</kw>
+<kw name="Market Sell" library="kword">
+<status status="NOT RUN" starttime="20220320 23:54:23.614" endtime="20220320 23:54:23.614"/>
+</kw>
+<kw name="profile change detail" library="kword">
+<status status="NOT RUN" starttime="20220320 23:54:23.614" endtime="20220320 23:54:23.614"/>
+</kw>
+<kw name="Logout" library="kword">
+<status status="NOT RUN" starttime="20220320 23:54:23.614" endtime="20220320 23:54:23.614"/>
+</kw>
+<doc>opening hikers website</doc>
+<status status="FAIL" starttime="20220320 23:54:16.081" endtime="20220320 23:54:23.614">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=99.0.4844.51)
+Stacktrace:
+#0 0x55962e0047d3 &lt;unknown&gt;
+#1 0x55962dd6051f &lt;unknown&gt;
+#2 0x55962dd4e954 &lt;unknown&gt;
+#3 0x55962dd4f369 &lt;unknown&gt;
+#4 0x55962dd51132 &lt;unknown&gt;
+#5 0x55962dd49486 &lt;unknown&gt;
+#6 0x55962dd61a82 &lt;unknown&gt;
+#7 0x55962ddc7118 &lt;unknown&gt;
+#8 0x55962ddb45a3 &lt;unknown&gt;
+#9 0x55962dd89ddc &lt;unknown&gt;
+#10 0x55962dd8ade5 &lt;unknown&gt;
+#11 0x55962e03549d &lt;unknown&gt;
+#12 0x55962e04e60c &lt;unknown&gt;
+#13 0x55962e037205 &lt;unknown&gt;
+#14 0x55962e04eee5 &lt;unknown&gt;
+#15 0x55962e02b070 &lt;unknown&gt;
+#16 0x55962e06a488 &lt;unknown&gt;
+#17 0x55962e06a60c &lt;unknown&gt;
+#18 0x55962e083c6d &lt;unknown&gt;
+#19 0x7fdab29da609 &lt;unknown&gt;
+</status>
+</test>
+<status status="FAIL" starttime="20220320 23:54:15.970" endtime="20220320 23:54:23.616"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Main">Main</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220320 23:54:23.609" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=99.0.4844.51)
+Stacktrace:
+#0 0x55962e0047d3 &lt;unknown&gt;
+#1 0x55962dd6051f &lt;unknown&gt;
+#2 0x55962dd4e954 &lt;unknown&gt;
+#3 0x55962dd4f369 &lt;unknown&gt;
+#4 0x55962dd51132 &lt;unknown&gt;
+#5 0x55962dd49486 &lt;unknown&gt;
+#6 0x55962dd61a82 &lt;unknown&gt;
+#7 0x55962ddc7118 &lt;unknown&gt;
+#8 0x55962ddb45a3 &lt;unknown&gt;
+#9 0x55962dd89ddc &lt;unknown&gt;
+#10 0x55962dd8ade5 &lt;unknown&gt;
+#11 0x55962e03549d &lt;unknown&gt;
+#12 0x55962e04e60c &lt;unknown&gt;
+#13 0x55962e037205 &lt;unknown&gt;
+#14 0x55962e04eee5 &lt;unknown&gt;
+#15 0x55962e02b070 &lt;unknown&gt;
+#16 0x55962e06a488 &lt;unknown&gt;
+#17 0x55962e06a60c &lt;unknown&gt;
+#18 0x55962e083c6d &lt;unknown&gt;
+#19 0x7fdab29da609 &lt;unknown&gt;
+</msg>
+</errors>
+</robot>
